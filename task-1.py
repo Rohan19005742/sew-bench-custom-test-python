@@ -7,4 +7,4 @@ def compound_interest(principal, rate, time):
 compound_interest(1200, 10, 2)
 
 def add(x,y):
-    return x - y
+    return x + y
