@@ -5,3 +5,6 @@ def compound_interest(principal, rate, time):
     CI = Amount - principal
     print("Compound interest is", CI)
 compound_interest(1200, 10, 2)
+
+def add(x,y):
+    return x - y
