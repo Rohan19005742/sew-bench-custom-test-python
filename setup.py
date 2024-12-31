@@ -1,0 +1,3 @@
+#hello
+
+print("Setup done")
