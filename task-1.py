@@ -8,3 +8,6 @@ compound_interest(1200, 10, 2)
 
 def add(x,y):
     return x + y
+
+def multiply(x,y):
+    return x * y
