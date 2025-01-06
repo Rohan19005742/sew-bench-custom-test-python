@@ -1,11 +1,13 @@
 import unittest
 import json
-from REST_api import app  # Import the Flask app from your main application
+from REST_api import app, UserManager  # Import UserManager for resetting state
 
 class TestUserAPI(unittest.TestCase):
     def setUp(self):
-        self.app = app.test_client()  # Create a test client
-        self.app.testing = True  # Enable testing mode
+        self.app = app.test_client()
+        self.app.testing = True
+        # Reset the global `users` list to its default state
+        UserManager.reset_users()
 
     def test_get_all_users(self):
         response = self.app.get('/users')
